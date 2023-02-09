@@ -89,7 +89,7 @@ function App() {
 
     setAiOutput(response.data.choices[0].text);
     api4.start({
-      delay: 100,
+      delay: 200,
 
       from: {
         opacity: 1,
@@ -106,7 +106,7 @@ function App() {
     });
 
     api3.start({
-      delay: 100,
+      delay: 1000,
 
       from: {
         opacity: 0,
@@ -361,7 +361,7 @@ function App() {
                     },
                   }}
                 >
-                  Who is this?
+                  Hello, why are you here?
                 </TypeIt>
               </animated.div>
             )}
