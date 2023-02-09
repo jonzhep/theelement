@@ -57,7 +57,7 @@ input {
   background-image: none;
   background-color: transparent;
   color: transparent;
-  caret-color: #ffffff84;
+  caret-color: #969696;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -79,7 +79,7 @@ input:focus {
   font-size:60px;
   text-align: "center";
  
-    color:  #ffffffb7;
+  color:  #969696;
     
 }
 
@@ -90,17 +90,17 @@ input:focus {
   line-height: 1.2;
   
 
-    color:  #ffffff65
+  color:  #969696;
     ;
 }
 .theInput {
   font-family: "customFont";
   font-size:45px;
-    color:  #ffffff83;
+  color:  #969696;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
-    box-shadow: rgba(255, 255, 255, 0.125) 0px 0px 1.5em, rgba(255, 255, 255, 0.188) 0px 0.5em 1.5em;   
+    box-shadow: rgba(255, 255, 255, 0.434) 0px 0px 1.5em, rgba(255, 255, 255, 0.289) 0px 0.5em 1.5em;   
     transition: box-shadow 0.9s ease-in-out;
     height: 2px;
 }
@@ -114,7 +114,7 @@ input:focus {
   font-family: "customFont";
   font-size:28px;
   text-align: "center";
-    color:  #ffffffb7;
+    color:  #969696;
 
 }
 

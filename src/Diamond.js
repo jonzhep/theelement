@@ -15,7 +15,7 @@ export default function Diamond() {
     resolution: { value: 20248, min: 256, max: 2048, step: 256 },
     transmission: { value: 1, min: 0, max: 1 },
     roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
-    thickness: { value: 4, min: 0, max: 10, step: 0.01 },
+    thickness: { value: 6, min: 0, max: 10, step: 0.01 },
     ior: { value: 1.5, min: 1, max: 5, step: 0.01 },
     chromaticAberration: { value: 1, min: 0, max: 1 },
     anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
