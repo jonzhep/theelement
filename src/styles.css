@@ -163,9 +163,8 @@ input:focus {
 }
 
 .wordmark {
-  opacity: 0;
-  animation: fadeInWordmark 7s ease-in-out forwards;
-  transition: all 0.2s ease-in-out;
+  opacity: 0.6;
+  
   
 }
 
@@ -173,14 +172,7 @@ input:focus {
   cursor: pointer;
 }
 
-@keyframes fadeInWordmark {
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
+
 
 .mobileModal{
   font-family: "customFont";

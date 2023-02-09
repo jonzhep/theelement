@@ -318,7 +318,7 @@ function App() {
           zIndex: 1,
           bottom: 0,
           right: 0,
-          padding: "1rem",
+          padding: "1.5rem",
         }}
       >
         <Group>
