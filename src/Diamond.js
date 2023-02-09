@@ -23,6 +23,7 @@ export default function Diamond() {
     distortionScale: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
     temporalDistortion: { value: 0.04, min: 0, max: 1, step: 0.01 },
     attenuationDistance: { value: 2.19, min: 0, max: 10, step: 0.01 },
+    
     // iridescence: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
     // clearcoat: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
     attenuationColor: '#ffffff',

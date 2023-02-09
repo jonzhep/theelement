@@ -10,11 +10,11 @@ export default function Scene(props) {
     <>
       <AccumulativeShadows
         frames={100}
-        color="purple"
-        colorBlend={0.5}
-        opacity={1.5}
+        color="black"
+        colorBlend={0.4}
+        opacity={6.6}
         scale={10}
-        alphaTest={0.95}
+        alphaTest={1}
       >
         <group ref={randomLight}>
           <RandomizedLight
