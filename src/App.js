@@ -465,7 +465,7 @@ function App() {
           <CenterMantine>
             <Stack align="center">
               <div className="mobileModal">
-                For the full audio-immersive experience visit stoca on desktop
+                For the full audio-immersive experience visit The Element on desktop
               </div>
               <BsFillArrowRightCircleFill
                 onClick={() => setOpened(false)}
