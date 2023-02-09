@@ -10,11 +10,11 @@ export default function Env(props) {
     enterIncrement = props.enterIncrement % 13;
 
     if (enterIncrement === 2) {
-      state.camera.position.lerp(vec.set(0, 0, 5), 0.0001);
+      state.camera.position.lerp(vec.set(5, 0, 0), 0.01);
       state.camera.lookAt(0, 0, 0);
     }
     if (enterIncrement === 3) {
-      state.camera.position.lerp(vec.set(5, 0, 2.5), 0.001);
+      state.camera.position.lerp(vec.set(0, 0, 2.5), 0.01);
       state.camera.lookAt(0, 0, 0);
     }
     if (enterIncrement === 4) {
@@ -24,28 +24,28 @@ export default function Env(props) {
     if (enterIncrement === 5) {
       state.camera.position.lerp(
         vec.set(4, 0, 3),
-        0.001
+        0.01
       );
       state.camera.lookAt(0, 0, 0);
     }
     if (enterIncrement === 6) {
       state.camera.position.lerp(
         vec.set(0, 4, 8),
-        0.005
+        0.01
       );
       state.camera.lookAt(0, 0, 0);
     }
     if (enterIncrement === 7) {
       state.camera.position.lerp(
         vec.set(0, 1, 6),
-        0.005
+        0.01
       );
       state.camera.lookAt(0, 0, 0);
     }
     if (enterIncrement === 8) {
       state.camera.position.lerp(
         vec.set(0, -0.902270925328769, 7.929117645891684),
-        0.005
+        0.01
       );
       state.camera.lookAt(0, 0, 0);
     }
