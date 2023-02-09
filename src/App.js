@@ -370,7 +370,7 @@ function App() {
               {loading ? (
                 <animated.div style={springs4}>
                   <PulseLoader
-                    color={"#53504A"}
+                    color={"#ffffffb7"}
                     loading={true}
                     size={10}
                     speedMultiplier={0.5}
