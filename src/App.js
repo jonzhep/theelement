@@ -471,7 +471,7 @@ function App() {
               <BsFillArrowRightCircleFill
                 onClick={() => setOpened(false)}
                 style={{ fill: "#a88fa3" }}
-                size={20}
+                size={10}
               />
             </Stack>
           </CenterMantine>
@@ -498,7 +498,7 @@ function App() {
         </group>
         <Env enterIncrement={enterIncrement} />
         {!isMobile && <Postproduction />}
-        <Perf position="top-left" />
+        
       </Canvas>
     </>
   );

@@ -123,7 +123,7 @@ input:focus {
     font-family: "customFont";
     font-size:30px;
     text-align: "center";
-    color:  #ffffffb7;
+    color:  #ffffff;
   }
   .theHeaderInput {
     font-family: "customFont";
@@ -131,14 +131,14 @@ input:focus {
     text-align: "center";
     line-height: 1.2;
     opacity: 0.5;
-    color:  #ffffffb7;
+    color:  #ffffff;
       ;
   }
   .theResponse {
     font-family: "customFont";
     font-size:20px;
     text-align: "center";
-    color:  #ffffffb7;
+    color:  #ffffff;
   }
  
 }
