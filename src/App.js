@@ -89,7 +89,7 @@ function App() {
 
     setAiOutput(response.data.choices[0].text);
     api4.start({
-      delay: 200,
+      delay: 100,
 
       from: {
         opacity: 1,
@@ -106,7 +106,7 @@ function App() {
     });
 
     api3.start({
-      delay: 1000,
+      delay: 100,
 
       from: {
         opacity: 0,
