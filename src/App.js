@@ -301,7 +301,7 @@ function App() {
   return (
     <>
       {/* Wordmark and Question Mark */}
-      <Image
+      {/* <Image
         className="wordmark"
         sx={{
           position: "absolute",
@@ -311,7 +311,7 @@ function App() {
         }}
         src={"/wordmark.svg"}
         width={200}
-      />
+      /> */}
       <div
         style={{
           position: "absolute",
