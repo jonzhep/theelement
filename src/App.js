@@ -45,7 +45,7 @@ function App() {
   const [word, setWord] = useState("");
 
   const [finalPrompt, setFinalPrompt] = useState(
-    "The following is a conversation with an extremely rude and pesimistic AI Philosopher. The philosopher is really mean, creative, clever, depressed, gives japanese haiku's in kanji randomly, and asks deep questions.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. Why are you here? "
+    "The following is a conversation with an extremely rude and pesimistic AI Philosopher. The philosopher is really rude in replies, swears, gives japanese haiku's in kanji randomly, and asks deep questions about insecurities.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. Why are you here? "
   );
   const [firstClick, setFirstClick] = useState(0);
   const [aiOutput, setAiOutput] = useState();
