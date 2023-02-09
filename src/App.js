@@ -6,6 +6,7 @@ import { PulseLoader } from "react-spinners";
 import InputBar from "./InputBar";
 import AudioController from "./AudioController";
 import { Configuration, OpenAIApi } from "openai";
+
 import {
   Image,
   Text,
@@ -495,6 +496,7 @@ function App() {
             colorFour={colorFour}
             colorFive={colorFive}
           />
+          
         </group>
         <Env enterIncrement={enterIncrement} />
         {!isMobile && <Postproduction />}

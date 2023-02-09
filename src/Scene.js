@@ -11,7 +11,7 @@ export default function Scene(props) {
       <AccumulativeShadows
         frames={100}
         color="black"
-        colorBlend={0.4}
+        colorBlend={0.9}
         opacity={6.6}
         scale={10}
         alphaTest={1}

@@ -54,6 +54,7 @@ export default function Postproduction() {
           uniforms-resolution-value={[1 / size.width, 1 / size.height]}
           renderToScreen
         />
+        
         <shaderPass
           args={[GrainyShader]}
           uniforms-tDiffuse-value={occlusionRenderTarget.texture}
