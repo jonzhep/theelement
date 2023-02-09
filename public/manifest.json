@@ -1,5 +1,12 @@
 {
- "name": "App",
+    "name": "The Element",
+    "short_name": "The Element",
+    "theme_color": "#fc038c",
+    "background_color": "#000000",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/app/",
+    "start_url": "",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
