@@ -498,7 +498,7 @@ function App() {
         </group>
         <Env enterIncrement={enterIncrement} />
         {!isMobile && <Postproduction />}
-        
+        <Perf position="top-left" />
       </Canvas>
     </>
   );
