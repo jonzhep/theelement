@@ -1,12 +1,13 @@
 import React, { useRef } from "react";
 import { useGLTF, MeshTransmissionMaterial } from "@react-three/drei";
 import * as THREE from "three";
-import { useControls } from 'leva'
+import { Leva, useControls } from 'leva'
 
 export default function Diamond() {
   
   const statueRef = useRef();
   const config = useControls({
+   
     meshPhysicalMaterial: false,
     transmissionSampler: false,
     backside: false,
@@ -24,11 +25,14 @@ export default function Diamond() {
     attenuationDistance: { value: 2.19, min: 0, max: 10, step: 0.01 },
     attenuationColor: '#ffffff',
     color: '#f200ff',
-    bg: '#6300ff'
+    bg: '#6300ff',
+    
   })
   const { nodes, materials } = useGLTF('/diamond.glb')
   return (
+    
     <group dispose={null}>
+      
       <mesh geometry={nodes.diamond1.geometry} castShadow
         receiveShadow position={[-0.25, 1.1, 0]} scale={0.3} rotation={[Math.PI / 5, 0, 0]}>
         {config.meshPhysicalMaterial ? <meshPhysicalMaterial {...config} /> : <MeshTransmissionMaterial background={new THREE.Color(config.bg)} {...config} />}
@@ -48,6 +52,7 @@ export default function Diamond() {
         
       </mesh>
     </group>
+    
   );
 }
 

@@ -27,6 +27,7 @@ import Scene from "./Scene";
 import Postproduction from "./Postproduction";
 import TypeIt from "typeit-react";
 import { Perf } from 'r3f-perf'
+import { Leva } from 'leva'
 
 function App() {
   const configuration = new Configuration({
@@ -478,7 +479,9 @@ function App() {
       )}
 
       {/* React Three Fiber Canvas */}
+      <Leva collapsed />
       <Canvas
+      
         shadows
         camera={{ position: [0, 0, 6.5], fov: 50 }}
         gl={{ antialias: false }}
