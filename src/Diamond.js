@@ -23,9 +23,11 @@ export default function Diamond() {
     distortionScale: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
     temporalDistortion: { value: 0.2, min: 0, max: 1, step: 0.01 },
     attenuationDistance: { value: 2.19, min: 0, max: 10, step: 0.01 },
+    iridescence: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
+    clearcoat: { value: 1.0, min: 0.01, max: 1, step: 0.01 },
     attenuationColor: '#ffffff',
-    color: '#f200ff',
-    bg: '#6300ff',
+    color: '#e7deff',
+    bg: '#ffffff',
     
   })
   const { nodes, materials } = useGLTF('/diamond.glb')
