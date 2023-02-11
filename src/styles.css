@@ -57,7 +57,7 @@ input {
   background-image: none;
   background-color: transparent;
   color: transparent;
-  caret-color: #ffffff84;
+  caret-color: #9e9e9ee4;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -79,7 +79,7 @@ input:focus {
   font-size:60px;
   text-align: "center";
  
-    color:  #ffffffb7;
+    color:  #9e9e9ee4;
     
 }
 
@@ -90,13 +90,13 @@ input:focus {
   line-height: 1.2;
   
 
-    color:  #ffffff65
+    color:  #9e9e9ee4
     ;
 }
 .theInput {
   font-family: "customFont";
   font-size:45px;
-    color:  #ffffff83;
+    color:  #9e9e9ee4;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
@@ -114,7 +114,7 @@ input:focus {
   font-family: "customFont";
   font-size:28px;
   text-align: "center";
-    color:  #c8c8c8;
+    color:  #9e9e9ee4;
 
 }
 
