@@ -79,7 +79,9 @@ input:focus {
   font-size:60px;
   text-align: "center";
  
-    color:  #9e9e9ee4;
+  color:  #ffffffeb;
+  background-color: rgba(0, 0, 0, 0.741);
+    
     
 }
 
@@ -88,16 +90,15 @@ input:focus {
   font-size:55px;
   text-align: "center";
   line-height: 1.2;
-  
-
-    color:  #9e9e9ee4
+  color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0.741);
     ;
 }
 .theInput {
   font-family: "customFont";
   font-size:45px;
-    color:  #9e9e9ee4;
-    background-color: rgba(255, 255, 255, 0);
+  color:  #ffffffeb;
+  background-color: rgba(0, 0, 0, 0.439);
     border: none;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.125) 0px 0px 1.5em, rgba(255, 255, 255, 0.188) 0px 0.5em 1.5em;   
@@ -114,16 +115,19 @@ input:focus {
   font-family: "customFont";
   font-size:28px;
   text-align: "center";
-    color:  #9e9e9ee4;
+    color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0.741);
 
 }
+
 
 @media only screen and (max-width: 600px) {
   .theHeader {
     font-family: "customFont";
     font-size:30px;
     text-align: "center";
-    color:  #c8c8c8;
+    color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0.741);
   }
   .theHeaderInput {
     font-family: "customFont";
@@ -131,14 +135,16 @@ input:focus {
     text-align: "center";
     line-height: 1.2;
     opacity: 0.5;
-    color:  #c8c8c8;
+    color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0.741);
       ;
   }
   .theResponse {
     font-family: "customFont";
     font-size:20px;
     text-align: "center";
-    color:  #c8c8c8;
+    color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0.741);
   }
  
 }
