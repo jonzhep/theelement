@@ -480,7 +480,7 @@ function App() {
       )}
 
       {/* React Three Fiber Canvas */}
-      <Leva collapsed />
+      <Leva hidden />
       <Canvas
       
         shadows
@@ -500,7 +500,7 @@ function App() {
         </group>
         <Env enterIncrement={enterIncrement} />
         {!isMobile && <Postproduction />}
-        <Perf position="top-left" />
+        {/* <Perf position="top-left" /> */}
       </Canvas>
     </>
   );
