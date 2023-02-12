@@ -24,12 +24,22 @@ export default function InputBar(props) {
     volume: 0.9,
   });
 
+  const hideMobileKeyboardOnReturn = (element) => {
+    element.addEventListener('keyup', (keyboardEvent) => {
+        const key = keyboardEvent.code || keyboardEvent.keyCode;
+        if (key === 'Enter' || key === 13) {
+            element.blur();
+        }
+    });
+};
+
+
   const handleKeyPress = (event) => {
     setFirstInteraction(firstInteraction + 1);
     if (isMobile) {
-      if (event.key === "Enter") {
+      if (event.key === "Enter") 
+      {
         setEntered(true);
-        Element.blur();
       }
     } else {
       if (event.key === " ") {
@@ -147,7 +157,7 @@ export default function InputBar(props) {
               zIndex: 1,
             }}
             onKeyDown={handleKeyPress}
-            
+            onKeyUp={hideMobileKeyboardOnReturn}
 
           />
         )}
