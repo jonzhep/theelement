@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Howl } from "howler";
 import { Center, ActionIcon } from "@mantine/core";
 import useStore from "./store";
@@ -23,18 +23,20 @@ export default function InputBar(props) {
     src: [`/audio/enter.mp3`],
     volume: 0.9,
   });
-
   
+
+  const inputRef = useRef();
 
 
   const handleKeyPress = (event) => {
     
     setFirstInteraction(firstInteraction + 1);
     if (isMobile) {
-      if (event.key === "Enter" || event.key === 13) 
+      if (event.key === "Enter") 
       {
         setEntered(true);
-        (this).blur();
+        inputRef.current.blur();
+        
 
         
       }
@@ -153,7 +155,9 @@ export default function InputBar(props) {
               position: "absolute",
               zIndex: 1,
             }}
+            ref={inputRef}
             onKeyDown={handleKeyPress}
+            
             // onKeyUp={hideMobileKeyboardOnReturn}
 
           />
