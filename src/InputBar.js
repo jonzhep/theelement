@@ -9,23 +9,6 @@ import { isMobile } from "react-device-detect";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import AudioController from "./AudioController";
 
-const InputField = () => {
-  const inputRef = useRef();
-
-  const handleEnterPress = (event) => {
-    if (event.key === 'Enter'|| event.key === 13) {
-      inputRef.current.blur();
-    }
-  };
-
-  return (
-    <input
-      ref={inputRef}
-      onKeyDown={handleEnterPress}
-    />
-  );
-};
-
 export default function InputBar(props) {
   const changeInput = useStore((state) => state.changeInput);
 
@@ -40,13 +23,21 @@ export default function InputBar(props) {
     src: [`/audio/enter.mp3`],
     volume: 0.9,
   });
+  
+
+
 
   const handleKeyPress = (event) => {
+    
     setFirstInteraction(firstInteraction + 1);
     if (isMobile) {
       if (event.key === "Enter") 
       {
         setEntered(true);
+        
+        
+
+        
       }
     } else {
       if (event.key === " ") {
@@ -97,7 +88,6 @@ export default function InputBar(props) {
   const [inputValue, setInputValue] = useState("");
 
   const [springs, api] = useSpring(() => ({
-
     from: { opacity: 1 },
   }));
 
@@ -105,7 +95,6 @@ export default function InputBar(props) {
 
   return (
     <>
-    <InputField/>
       <Center>
         {isMobile ? (
           <>
@@ -181,7 +170,6 @@ export default function InputBar(props) {
         />
       )}
     </>
-    
   );
 }
 
