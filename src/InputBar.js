@@ -146,6 +146,8 @@ export default function InputBar(props) {
               zIndex: 1,
             }}
             onKeyDown={handleKeyPress}
+            enterkeyhint="done"
+
           />
         )}
       </Center>
