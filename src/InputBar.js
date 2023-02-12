@@ -29,6 +29,7 @@ export default function InputBar(props) {
     if (isMobile) {
       if (event.key === "Enter") {
         setEntered(true);
+        Element.blur();
       }
     } else {
       if (event.key === " ") {
@@ -146,7 +147,7 @@ export default function InputBar(props) {
               zIndex: 1,
             }}
             onKeyDown={handleKeyPress}
-            enterkeyhint="done"
+            
 
           />
         )}
