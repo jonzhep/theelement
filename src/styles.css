@@ -57,7 +57,7 @@ input {
   background-image: none;
   background-color: transparent;
   color: transparent;
-  caret-color: #9e9e9ee4;
+  caret-color:  #ffffffeb;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -101,7 +101,7 @@ input:focus {
   color:  #ffffffeb;
   background-color: rgba(0, 0, 0, 0);
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: rgba(255, 255, 255, 0.799) 0px 0px 1.5em, rgba(255, 255, 255, 0.799) 0px 0.5em 1.5em;   
     transition: box-shadow 0.9s ease-in-out;
     height: 2px;
@@ -123,6 +123,18 @@ input:focus {
 
 
 @media only screen and (max-width: 600px) {
+  .theInput {
+    font-family: "customFont";
+    font-size:45px;
+    color:  #ffffffeb;
+    background-color: rgba(0, 0, 0, 0);
+      border: none;
+      
+      box-shadow: none;   
+      
+      
+  }
+  
   .theHeader {
     font-family: "customFont";
     font-size:30px;
@@ -130,6 +142,7 @@ input:focus {
     color:  #ffffffeb;
     background-color: rgba(0, 0, 0, 0.741);
   }
+  
   .theHeaderInput {
     font-family: "customFont";
     font-size:25px;

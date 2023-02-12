@@ -17,11 +17,11 @@ export default function InputBar(props) {
   const [entered, setEntered] = useState(false);
   const keySound = new Howl({
     src: [`/audio/${currentNote}.mp3`],
-    volume: 0.4,
+    volume: 0.9,
   });
   const enterSound = new Howl({
     src: [`/audio/enter.mp3`],
-    volume: 0.5,
+    volume: 0.9,
   });
 
   const handleKeyPress = (event) => {
@@ -94,8 +94,10 @@ export default function InputBar(props) {
                 position: "absolute",
                 zIndex: 1,
                 bottom: 70,
-                border: "1px solid #ffffff",
-                borderRadius: "15px",
+                border: "1px solid #ffffffeb",
+                borderRadius: "3px",
+                
+                
               }}
             >
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -109,15 +111,17 @@ export default function InputBar(props) {
                   style={{
                     caretColor: "white",
                     fontSize: 20,
-                    textAlign: "center",
-                    width: "80%",
+                    textAlign: "left",
+                    width: "100%",
 
-                    height: "50px",
+                    height: "25px",
+                    
                   }}
+                  
                   onKeyDown={handleKeyPress}
                 />
                 <ActionIcon onClick={() => setEntered(true)}>
-                  <VscArrowSmallRight style={{ fill: "#ffffff" }} size={100} />
+                  <VscArrowSmallRight style={{ fill: "#ffffffeb",  }} size={100} />
                 </ActionIcon>
               </div>
             </div>
@@ -144,12 +148,7 @@ export default function InputBar(props) {
           />
         )}
       </Center>
-      {!isMobile && (
-        <AudioController
-          firstInteraction={firstInteraction}
-          word={props.word}
-        />
-      )}
+      
     </>
   );
 }
