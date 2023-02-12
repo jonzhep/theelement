@@ -471,7 +471,7 @@ function App() {
               </div>
               <BsFillArrowRightCircleFill
                 onClick={() => setOpened(false)}
-                style={{ fill: "#a88fa3" }}
+                style={{ fill: "#ffffff" }}
                 size={10}
               />
             </Stack>
