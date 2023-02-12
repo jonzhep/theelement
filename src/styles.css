@@ -98,10 +98,10 @@ input:focus {
   font-family: "customFont";
   font-size:45px;
   color:  #ffffffeb;
-  background-color: rgba(0, 0, 0, 0.439);
+  background-color: rgba(0, 0, 0, 0);
     border: none;
     border-radius: 10px;
-    box-shadow: rgba(255, 255, 255, 0.125) 0px 0px 1.5em, rgba(255, 255, 255, 0.188) 0px 0.5em 1.5em;   
+    box-shadow: rgba(255, 255, 255, 0.799) 0px 0px 1.5em, rgba(255, 255, 255, 0.799) 0px 0.5em 1.5em;   
     transition: box-shadow 0.9s ease-in-out;
     height: 2px;
 }
