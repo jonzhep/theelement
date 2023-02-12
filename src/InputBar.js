@@ -96,6 +96,7 @@ export default function InputBar(props) {
                 bottom: 70,
                 border: "1px solid #ffffffeb",
                 borderRadius: "3px",
+                width: "60%",
                 
                 
               }}

@@ -320,6 +320,7 @@ function App() {
           bottom: 0,
           right: 0,
           padding: "1.5rem",
+          
         }}
       >
         <Group>
@@ -342,6 +343,7 @@ function App() {
           padding: "1rem",
           width: "100%",
           textAlign: "center",
+          
         }}
       >
         <CenterMantine>
@@ -430,7 +432,7 @@ function App() {
                       window.open("https://twitter.com/EmpireofCHARM", "_blank")
                     }
                   >
-                    <VscTwitter size={30} style={{ fill: "#ffffffa3" }} />
+                    <VscTwitter size={30} style={{ fill: "#ffffff" }} />
                   </ActionIcon>
                   <ActionIcon
                     onClick={() =>
@@ -440,7 +442,7 @@ function App() {
                       )
                     }
                   >
-                    <FaDiscord size={30} style={{ fill: "#ffffffa3" }} />
+                    <FaDiscord size={30} style={{ fill: "#ffffff" }} />
                   </ActionIcon>
                 </Group>
               </CenterMantine>
@@ -451,13 +453,14 @@ function App() {
       </Modal>
 
       {/* Modal to display if user is on mobile */}
-      {isMobile && (
+      {/* {isMobile && (
         <Modal
-          overlayOpacity={0.55}
-          overlayBlur={3}
+          overlayOpacity={0.1}
+          overlayBlur={10}
           withCloseButton={false}
           centered
           opened={opened}
+          overlayColor="#000000"
           onClose={() => setOpened(false)}
           transition="fade"
           transitionDuration={600}
@@ -467,17 +470,17 @@ function App() {
           <CenterMantine>
             <Stack align="center">
               <div className="mobileModal">
-                For the full audio-immersive experience visit The Element on desktop
+                Visit The Element on desktop for audio.
               </div>
               <BsFillArrowRightCircleFill
                 onClick={() => setOpened(false)}
                 style={{ fill: "#ffffff" }}
-                size={25}
+                size={30}
               />
             </Stack>
           </CenterMantine>
         </Modal>
-      )}
+      )} */}
 
       {/* React Three Fiber Canvas */}
       <Leva hidden />
