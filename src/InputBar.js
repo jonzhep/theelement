@@ -94,8 +94,8 @@ export default function InputBar(props) {
                 position: "absolute",
                 zIndex: 1,
                 bottom: 70,
-                border: "1px solid #A8A28F",
-                borderRadius: "10px",
+                border: "1px solid #ffffff",
+                borderRadius: "15px",
               }}
             >
               <div style={{ display: "flex", alignItems: "center" }}>
