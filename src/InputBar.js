@@ -31,7 +31,7 @@ export default function InputBar(props) {
     
     setFirstInteraction(firstInteraction + 1);
     if (isMobile) {
-      if (event.key === "Enter") 
+      if (event.key === "Enter" || event.key === 13) 
       {
         setEntered(true);
         (this).blur();
