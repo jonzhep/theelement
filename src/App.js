@@ -472,7 +472,7 @@ function App() {
               <BsFillArrowRightCircleFill
                 onClick={() => setOpened(false)}
                 style={{ fill: "#ffffff" }}
-                size={10}
+                size={25}
               />
             </Stack>
           </CenterMantine>

@@ -117,7 +117,7 @@ export default function InputBar(props) {
                   onKeyDown={handleKeyPress}
                 />
                 <ActionIcon onClick={() => setEntered(true)}>
-                  <VscArrowSmallRight style={{ fill: "#A8A28F" }} size={100} />
+                  <VscArrowSmallRight style={{ fill: "#ffffff" }} size={100} />
                 </ActionIcon>
               </div>
             </div>
