@@ -138,7 +138,7 @@ export default function InputBar(props) {
               caretColor: "white",
               fontSize: 35,
               textAlign: "center",
-              width: "1000px",
+              width: "50vw",
               height: "70px",
               bottom: 80,
               position: "absolute",
@@ -148,7 +148,12 @@ export default function InputBar(props) {
           />
         )}
       </Center>
-      
+      {!isMobile && (
+        <AudioController
+          firstInteraction={firstInteraction}
+          word={props.word}
+        />
+      )}
     </>
   );
 }

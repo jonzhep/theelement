@@ -12,7 +12,7 @@ export default function Diamond() {
     transmissionSampler: false,
     backside: true,
     samples: { value: 14, min: 1, max: 32, step: 1 },
-    resolution: { value: 1024, min: 256, max: 2048, step: 256 },
+    resolution: { value: 256, min: 256, max: 2048, step: 256 },
     transmission: { value: 1, min: 0, max: 1 },
     roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
     thickness: { value: 6, min: 0, max: 10, step: 0.01 },

@@ -62,12 +62,15 @@ input {
   -moz-box-shadow: none;
   box-shadow: none;
   font-weight: 400;
+  
+  
+  
 }
 
-input:focus {
+/* input:focus {
   outline: none;
   box-shadow: none !important;
-}
+} */
 
 @font-face {
   font-family: "customFont";
@@ -99,11 +102,12 @@ input:focus {
   font-family: "customFont";
   font-size:45px;
   color:  #ffffffeb;
-  background-color: rgba(0, 0, 0, 0);
+  
+  background-color: rgba(0, 0, 0, 0.475);
     border: none;
     border-radius: 3px;
-    box-shadow: rgba(255, 255, 255, 0.799) 0px 0px 1.5em, rgba(255, 255, 255, 0.799) 0px 0.5em 1.5em;   
-    transition: box-shadow 0.9s ease-in-out;
+    box-shadow: rgba(72, 0, 255, 0.799) 0px 0px 1.5em, rgba(255, 0, 0, 0.799) 0px 0.5em 1.5em;   
+    transition: box-shadow 1.5s ease-in-out;
     height: 2px;
 }
 
