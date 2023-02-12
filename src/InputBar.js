@@ -24,9 +24,22 @@ export default function InputBar(props) {
     volume: 0.9,
   });
   
-
-  const inputRef = useRef();
-
+  const InputField = () => {
+    const inputRef = useRef();
+  
+    const handleEnterPress = (event) => {
+      if (event.key === 'Enter'|| event.key === 13) {
+        inputRef.current.blur();
+      }
+    };
+  
+    return (
+      <input
+        ref={inputRef}
+        onKeyDown={handleEnterPress}
+      />
+    );
+  };
 
   const handleKeyPress = (event) => {
     
@@ -35,7 +48,7 @@ export default function InputBar(props) {
       if (event.key === "Enter") 
       {
         setEntered(true);
-        inputRef.current.blur();
+        
         
 
         
@@ -155,7 +168,7 @@ export default function InputBar(props) {
               position: "absolute",
               zIndex: 1,
             }}
-            ref={inputRef}
+            
             onKeyDown={handleKeyPress}
             
             // onKeyUp={hideMobileKeyboardOnReturn}
