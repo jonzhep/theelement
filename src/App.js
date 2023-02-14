@@ -66,7 +66,7 @@ function App() {
     const combined = finalPrompt + "\nHuman:" + inputt + "\nAI:";
 
     const response = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "text-davinci-002",
       prompt: combined,
       temperature: 0.9,
       max_tokens: 300,
@@ -76,7 +76,7 @@ function App() {
       stop: [" Human:", " AI:"],
     });
     const response2 = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "text-davinci-002",
       prompt:
         "Five different hex value colors that are a color palette for " +
         inputt +
