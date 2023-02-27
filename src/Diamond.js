@@ -4,6 +4,11 @@ import * as THREE from "three";
 import { Leva, useControls } from 'leva'
 
 export default function Diamond() {
+
+  //web workers for the diamond model to load faster and not block the main thread  
+
+
+
   
   const statueRef = useRef();
   const config = useControls({
@@ -32,6 +37,17 @@ export default function Diamond() {
     envMapIntensity: { value: 0.02, min: 0, max: 10, step: 0.01 },
     
   })
+
+  //load the diamond model   
+  const worker = new Worker(new URL('./worker.js', import.meta.url));
+  worker.postMessage({ type: 'load', url: '/diamond.glb' });
+  worker.onmessage = (e) => {
+    if (e.data.type === 'load') {
+      console.log('loaded');
+    }
+  };
+ 
+
   const { nodes, materials } = useGLTF('/diamond.glb')
   return (
     
@@ -41,6 +57,8 @@ export default function Diamond() {
         receiveShadow position={[-0.25, 1.1, 0]} scale={0.3} rotation={[Math.PI / 10, 0, 0]}>
         {config.meshPhysicalMaterial ? <meshPhysicalMaterial {...config} /> : <MeshTransmissionMaterial background={new THREE.Color(config.bg)} {...config} />}
       </mesh>
+
+   
       <mesh
       
         

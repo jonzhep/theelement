@@ -13,6 +13,9 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/three": "^0.149.0",
+    "@web3modal/ethereum": "^2.1.1",
+    "@web3modal/react": "^2.1.1",
+    "ethers": "^5",
     "gsap": "^3.11.4",
     "howler": "^2.2.3",
     "leva": "^0.9.34",
@@ -28,6 +31,7 @@
     "react-spinners": "^0.13.7",
     "three": "^0.149.0",
     "typeit-react": "^2.6.4",
+    "wagmi": "^0.11.7",
     "web-vitals": "^3.1.1",
     "zustand": "^4.1.5"
   },

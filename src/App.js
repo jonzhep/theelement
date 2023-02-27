@@ -30,7 +30,62 @@ import TypeIt from "typeit-react";
 import { Perf } from 'r3f-perf'
 import { Leva } from 'leva'
 
+import {
+  EthereumClient,
+  modalConnectors,
+  walletConnectProvider,
+} from "@web3modal/ethereum";
+
+
+
+import { Web3Modal } from "@web3modal/react";
+
+import { configureChains, createClient, WagmiConfig } from "wagmi";
+
+import { arbitrum, mainnet, polygon } from "wagmi/chains";
+
+import { Web3Button } from "@web3modal/react";
+
+
+
+
+
+
+
+const chains = [arbitrum, mainnet, polygon];
+
+// Wagmi client
+const { provider } = configureChains(chains, [
+  walletConnectProvider({ projectId: "adc7318acda7c5926f7c5fe38010f1e1" }),
+]);
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors: modalConnectors({
+    projectId: "adc7318acda7c5926f7c5fe38010f1e1",
+    version: "1", // or "2"
+    appName: "web3Modal",
+    chains,
+  }),
+  provider,
+});
+
+// Web3Modal Ethereum Client
+const ethereumClient = new EthereumClient(wagmiClient, chains);
+
+
+
+
 function App() {
+
+  const worker = new Worker(new URL('./worker.js', import.meta.url));
+  worker.postMessage({ type: 'load', url: 'src/diamond.js' });
+  worker.onmessage = (e) => {
+    if (e.data.type === 'load') {
+      console.log('loaded');
+    }
+  };
+
+
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   });
@@ -346,6 +401,7 @@ function App() {
           
         }}
       >
+        <Web3Button position="center" index="100" />
         <CenterMantine>
           <Stack mt={60}>
             {firstInput ? (
@@ -399,6 +455,18 @@ function App() {
       </animated.div>
 
       {/* About  */}
+
+
+      <WagmiConfig client={wagmiClient}>
+        
+      </WagmiConfig>
+
+      <Web3Modal
+        projectId="adc7318acda7c5926f7c5fe38010f1e1"
+        ethereumClient={ethereumClient}
+      />
+
+
       <Modal
         size={modalSize}
         overlayOpacity={0.5}
@@ -484,12 +552,16 @@ function App() {
 
       {/* React Three Fiber Canvas */}
       <Leva hidden />
+
+      
+
       <Canvas
       
         shadows
         camera={{ position: [0, 0, 6.5], fov: 50 }}
         gl={{ antialias: false }}
       >
+        
         <group position={[0.2, -1.5, 0]}>
           <Scene
             firstClick={firstClick}
@@ -503,7 +575,7 @@ function App() {
         </group>
         <Env enterIncrement={enterIncrement} />
         {!isMobile && <Postproduction />}
-        {/* <Perf position="top-left" /> */}
+        <Perf position="top-left" />
       </Canvas>
     </>
   );
