@@ -77,13 +77,9 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 
 function App() {
 
-  const worker = new Worker(new URL('./worker.js', import.meta.url));
-  worker.postMessage({ type: 'load', url: 'src/diamond.js' });
-  worker.onmessage = (e) => {
-    if (e.data.type === 'load') {
-      console.log('loaded');
-    }
-  };
+
+
+
 
 
   const configuration = new Configuration({

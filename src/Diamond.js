@@ -39,13 +39,16 @@ export default function Diamond() {
   })
 
   //load the diamond model   
-  const worker = new Worker(new URL('./worker.js', import.meta.url));
-  worker.postMessage({ type: 'load', url: '/diamond.glb' });
-  worker.onmessage = (e) => {
-    if (e.data.type === 'load') {
-      console.log('loaded');
-    }
-  };
+
+
+  // const worker = new Worker(new URL('./worker.js', import.meta.url));
+  // worker.postMessage({ type: 'load', url: '/diamond.glb' });
+  // worker.onmessage = (e) => {
+  //   if (e.data.type === 'load') {
+  //     console.log('loaded');
+  //   }
+  // };
+
  
 
   const { nodes, materials } = useGLTF('/diamond.glb')
