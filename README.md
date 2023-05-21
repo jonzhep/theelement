@@ -12,10 +12,9 @@
       The Element invites you to explore your thoughts with a wise and calm AI companion while adapting the visuals and sounds to match your emotions in the moment. With walletconnect message sending protocol.
     <br />
     
-    <br />
-    Built using OpenAI's API and React Three Fiber
-    <br />
-    <br />
+    
+    Built using OpenAI's API, React Three Fiber and WalletConnect
+    
     
 
 <div align="center">
